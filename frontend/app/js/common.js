@@ -83,16 +83,23 @@ function set_actions_nav_selections() {
 async function load_project_data_as_gzjson_frontend(){
     let srcjson = await get_source_json()
     // console.log(srcjson)
+    // return 
 
     let projectdatajson_dict = srcjson.data
 
     let attrs_arr = Object.keys(projectdatajson_dict)
+    // console.log(attrs_arr)
+    
     let html_identifier = `div#${global_project_datadiv_id}`
     for (let i = 0; i < attrs_arr.length; i++){
         let thisattr = attrs_arr[i]
+        // console.log(thisattr)
         let datajson_thisattr = projectdatajson_dict[thisattr]
-        await save_json_to_html_attr_base64str_of_gzbuffer(datajson_thisattr, html_identifier, attrs_arr)
+        // console.log(datajson_thisattr)
+        await save_json_to_html_attr_base64str_of_gzbuffer(datajson_thisattr, html_identifier, thisattr)
     }
+
+    console.log('load date:', attrs_arr.join(', '))
 
 }
 
