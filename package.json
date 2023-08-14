@@ -1,0 +1,32 @@
+{
+  "name": "bc_address",
+  "version": "1.0.0",
+  "description": "bc british columbia geocoder standardization standard address parcel block gps coordinator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShenzhenYAO/bc_address.git"
+  },
+  "keywords": [
+    "bc",
+    "british",
+    "columbia",
+    "geocoder",
+    "standardization",
+    "standard",
+    "address",
+    "parcel",
+    "block",
+    "gps",
+    "coordinator"
+  ],
+  "author": "Shenzhen Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShenzhenYAO/bc_address/issues"
+  },
+  "homepage": "https://github.com/ShenzhenYAO/bc_address#readme"
+}
