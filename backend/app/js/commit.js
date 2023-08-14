@@ -13,7 +13,7 @@ const { exec } = require("child_process");
 
 (async () => {
 
-
+    console.log('running commit.js...')
 
     if (!fs.existsSync(path_logfile)) { return }
 
