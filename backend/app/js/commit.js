@@ -58,7 +58,7 @@ const { exec } = require("child_process");
                 return;
             }
             if (stderr) {
-                // console.log(`stderr1: ${stderr}`);
+                // console.log(`git add: ${stderr}`);
                 // return;
             }
             // console.log(`stdout: ${stdout}`);
@@ -69,7 +69,7 @@ const { exec } = require("child_process");
                     return;
                 }
                 if (stderr) {
-                    // console.log(`stderr2: ${stderr}`);
+                    console.log(`git commit: ${stderr}`);
                     // return;
                 }
                 // console.log(`stdout: ${stdout}`);
@@ -80,7 +80,7 @@ const { exec } = require("child_process");
                         return;
                     }
                     if (stderr) {
-                        // console.log(`stderr3: ${stderr}`);
+                        console.log(`git push: ${stderr}`);
                         // return;
                     }
                     // console.log(`stdout: ${stdout}`);
