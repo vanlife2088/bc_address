@@ -58,8 +58,8 @@ const { exec } = require("child_process");
                 return;
             }
             if (stderr) {
-                console.log(`stderr1: ${stderr}`);
-                return;
+                // console.log(`stderr1: ${stderr}`);
+                // return;
             }
             // console.log(`stdout: ${stdout}`);
 
@@ -69,8 +69,8 @@ const { exec } = require("child_process");
                     return;
                 }
                 if (stderr) {
-                    console.log(`stderr2: ${stderr}`);
-                    return;
+                    // console.log(`stderr2: ${stderr}`);
+                    // return;
                 }
                 // console.log(`stdout: ${stdout}`);
 
@@ -80,8 +80,8 @@ const { exec } = require("child_process");
                         return;
                     }
                     if (stderr) {
-                        console.log(`stderr3: ${stderr}`);
-                        return;
+                        // console.log(`stderr3: ${stderr}`);
+                        // return;
                     }
                     // console.log(`stdout: ${stdout}`);
                 });
