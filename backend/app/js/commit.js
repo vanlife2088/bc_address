@@ -54,33 +54,33 @@ const { exec } = require("child_process");
 
         exec("git add .", (error, stdout, stderr) => {
             if (error) {
-                console.log(`error: ${error.message}`);
+                console.log(`error1: ${error.message}`);
                 return;
             }
             if (stderr) {
-                console.log(`stderr: ${stderr}`);
+                console.log(`stderr1: ${stderr}`);
                 return;
             }
             // console.log(`stdout: ${stdout}`);
 
             exec(`git commit -m "${lastcommitted_dtstr}"`, (error, stdout, stderr) => {
                 if (error) {
-                    console.log(`error: ${error.message}`);
+                    console.log(`error2: ${error.message}`);
                     return;
                 }
                 if (stderr) {
-                    console.log(`stderr: ${stderr}`);
+                    console.log(`stderr2: ${stderr}`);
                     return;
                 }
                 // console.log(`stdout: ${stdout}`);
 
                 exec(`git push origin master`, (error, stdout, stderr) => {
                     if (error) {
-                        console.log(`error: ${error.message}`);
+                        console.log(`error3: ${error.message}`);
                         return;
                     }
                     if (stderr) {
-                        console.log(`stderr: ${stderr}`);
+                        console.log(`stderr3: ${stderr}`);
                         return;
                     }
                     // console.log(`stdout: ${stdout}`);
