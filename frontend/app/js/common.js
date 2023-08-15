@@ -101,6 +101,7 @@ async function load_project_data_as_gzjson_frontend(){
 
     console.log('load date:', attrs_arr.join(', '))
 
+    d3.select('div#display').html('')
 }
 
 async function save_project_data_as_gzjson_frontend(){
@@ -129,7 +130,7 @@ async function save_project_data_as_gzjson_frontend(){
     }
     let project_json = {meta:meta, data: project_json_data}
     let project_json_gzbuffer_str = await json_to_gzbuffer_frontend(project_json)
-    await savefile_frontend(project_json_gzbuffer_str, filename='project1.getstdaddr')
+    await savefile_frontend(project_json_gzbuffer_str, filename=`project_${datetime_stampstr}.gsa`)
 }
 
 
@@ -619,7 +620,7 @@ async function get_source_json() {
     if (extname === 'json') { 
         readfileresult_dict= await readjsonfile(src_file_obj) 
     }
-    else if (extname === 'gz' || extname === 'getstdaddr') { // .getstdaddr is indeed a .gz file
+    else if (extname === 'gz' || extname === 'gsa') { // .gsa is indeed a .gz file
         readfileresult_dict = await readgzfile(src_file_obj) 
     }
 

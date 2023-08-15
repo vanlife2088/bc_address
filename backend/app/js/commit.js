@@ -57,7 +57,7 @@ const { exec } = require("child_process");
                 console.log(`error1: ${error.message}`);
                 return;
             }
-            if (stderr) {
+            if (stderr) { // stderr may not be errors, could be just a warning or reminding msg ...
                 // console.log(`git add: ${stderr}`);
                 // return;
             }
