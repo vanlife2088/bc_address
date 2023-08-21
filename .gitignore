@@ -1,3 +1,5 @@
 node_modules/
 testdata/
 data/
+.env
+README1.md
