@@ -40,9 +40,9 @@ const { exec } = require("child_process");
 
     // convert the dt string to dt value
     let lastupdated_dt = convert_dtstr_to_dt(lastupdated_dtstr) // Date.parse('2024-01-01T00:01:00')
-    // console.log(34, lastupdated_dt)
+    console.log(34, lastupdated_dtstr, lastupdated_dt)
     let lastcommitted_dt = convert_dtstr_to_dt(lastcommitted_dtstr) // Date.parse('2023-12-02T00:01:55')
-    // console.log(36, lastcommitted_dt)
+    console.log(36, lastcommitted_dt)
 
     // if (lastupdated_dt > lastcommitted_dt), run the cmd lines to commit to github
     if (37, lastupdated_dt > lastcommitted_dt) {
